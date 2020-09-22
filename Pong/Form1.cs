@@ -1,7 +1,7 @@
 ﻿/*
  * Description:     A basic PONG simulator
- * Author:           
- * Date:            
+ * Author:  Jayden Roddick 
+ * Date: 09/22/20 
  */
 
 #region libraries
@@ -147,6 +147,9 @@ namespace Pong
             // TODO set starting X position for ball to middle of screen, (use this.Width and ball.Width)
             // TODO set starting Y position for ball to middle of screen, (use this.Height and ball.Height)
 
+            drawBrush.Color = Color.Red;
+           
+
         }
 
         /// <summary>
@@ -248,11 +251,12 @@ namespace Pong
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             // TODO draw paddles using FillRectangle
+            e.Graphics FilLRectangle(30, 30, 100, 200); 
 
             // TODO draw ball using FillRectangle
 
             // TODO draw scores to the screen using DrawString
         }
-
+       
     }
 }
